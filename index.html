@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strivo - Tienda de Tenis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-links">
+            <a href="#ayuda">Ayuda</a>
+            <a href="#registro">Regístrate</a>
+            <a href="#eventos">Eventos</a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Buscar" class="search-input" id="searchInput">
+            <button class="search-btn" onclick="searchProducts()">🔍</button>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <button class="logo-btn" onclick="goHome()">
+                    <span style="font-size: 24px; font-weight: bold; color: white;">STRIVO</span>
+                </button>
+            </div>
+            <div class="nav-center">
+                <a href="descuento.html" class="nav-link">Descuento</a>
+                <a href="hombres.html" class="nav-link">Hombre</a>
+                <a href="mujeres.html" class="nav-link">Mujer</a>
+                <a href="ninos.html" class="nav-link">Niños</a>
+                <a href="marcas.html" class="nav-link">Marcas</a>
+            </div>
+            <div class="nav-right">
+                <a href="favoritos.html" class="nav-icon">❤️<span id="favoritesCount" class="count-badge"></span></a>
+                <a href="carrito.html" class="nav-icon">🛒<span id="cartCount" class="count-badge"></span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Descubre tu potencial</h1>
+                <p>La nueva colección de tenis profesional</p>
+                <a href="#featured-products" class="cta-button">Ver Productos</a>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <div class="container">
+                <h2>Recién llegado</h2>
+                <h3>PowerAce 98</h3>
+            </div>
+        </section>
+
+        <section class="tennis-racket-section">
+            <div class="container">
+                <div class="racket-content">
+                    <div class="racket-text">
+                        <h2>Raqueta de tenis</h2>
+                        <p>Golpea sin límites. Domina la cancha</p>
+                        <p>Control absoluto con cada swing. Libera tu máximo potencial con la precisión de la Strivo.</p>
+                        <a href="marcas.html" class="learn-more-btn">Saber más</a>
+                    </div>
+                    <div class="racket-image">
+                        <img src="/Strivo-1/img/ChatGPT Image 26 may 2025, 17_06_01.png" alt="Raqueta de tenis">
+                    </div>
+                </div>
+                <div class="strivo-text">STRIVO</div>
+            </div>
+        </section>
+
+        <section class="featured-products" id="featured-products">
+            <h2>Productos destacados</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Productos se cargarán con JavaScript -->
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>Comprar por categoría</h2>
+            <div class="categories-grid">
+                <div class="category-card" onclick="location.href='hombres.html'">
+                    <img src="https://images.pexels.com/photos/1407354/pexels-photo-1407354.jpeg" alt="Hombres">
+                    <h3>Hombres</h3>
+                </div>
+                <div class="category-card" onclick="location.href='mujeres.html'">
+                    <img src="https://images.pexels.com/photos/2346237/pexels-photo-2346237.jpeg" alt="Mujeres">
+                    <h3>Mujeres</h3>
+                </div>
+                <div class="category-card" onclick="location.href='ninos.html'">
+                    <img src="https://images.pexels.com/photos/936019/pexels-photo-936019.jpeg" alt="Niños">
+                    <h3>Niños</h3>
+                </div>
+                <div class="category-card" onclick="location.href='marcas.html'">
+                    <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg" alt="Marcas">
+                    <h3>Marcas</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Obtener ayuda</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Estado de pedido</a></li>
+                    <li><a href="#">Envío y entrega</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Opciones de pago</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Acerca de Strivo</h3>
+                <ul>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Inversionistas</a></li>
+                    <li><a href="#">Propósito</a></li>
+                    <li><a href="#">Sostenibilidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Promociones y descuentos</h3>
+                <ul>
+                    <li><a href="descuento.html">Descuentos</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#">📘</a>
+                    <a href="#">📷</a>
+                    <a href="#">🐦</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

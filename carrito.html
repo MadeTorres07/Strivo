@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Strivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-links">
+            <a href="#ayuda">Ayuda</a>
+            <a href="#registro">Regístrate</a>
+            <a href="#eventos">Eventos</a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Buscar" class="search-input" id="searchInput">
+            <button class="search-btn" onclick="searchProducts()">🔍</button>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <button class="logo-btn" onclick="goHome()">
+                    <span style="font-size: 24px; font-weight: bold; color: white;">STRIVO</span>
+                </button>
+            </div>
+            <div class="nav-center">
+                <a href="descuento.html" class="nav-link">Descuento</a>
+                <a href="hombres.html" class="nav-link">Hombre</a>
+                <a href="mujeres.html" class="nav-link">Mujer</a>
+                <a href="ninos.html" class="nav-link">Niños</a>
+                <a href="marcas.html" class="nav-link">Marcas</a>
+            </div>
+            <div class="nav-right">
+                <a href="favoritos.html" class="nav-icon">❤️<span id="favoritesCount" class="count-badge"></span></a>
+                <a href="carrito.html" class="nav-icon active">🛒<span id="cartCount" class="count-badge"></span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cart-main">
+        <h1 class="page-title">Tu Carrito</h1>
+        
+        <div class="cart-content">
+            <div class="cart-items" id="cartItems">
+                <!-- Los productos del carrito se cargarán aquí -->
+            </div>
+            
+            <div class="cart-summary" id="cartSummary">
+                <!-- El resumen se cargará aquí -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Obtener ayuda</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Estado de pedido</a></li>
+                    <li><a href="#">Envío y entrega</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Opciones de pago</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Acerca de Strivo</h3>
+                <ul>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Inversionistas</a></li>
+                    <li><a href="#">Propósito</a></li>
+                    <li><a href="#">Sostenibilidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Promociones y descuentos</h3>
+                <ul>
+                    <li><a href="descuento.html">Descuentos</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#">📘</a>
+                    <a href="#">📷</a>
+                    <a href="#">🐦</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

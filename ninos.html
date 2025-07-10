@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niños - Strivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-links">
+            <a href="#ayuda">Ayuda</a>
+            <a href="#registro">Regístrate</a>
+            <a href="#eventos">Eventos</a>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Buscar" class="search-input" id="searchInput">
+            <button class="search-btn" onclick="searchProducts()">🔍</button>
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-left">
+                <button class="logo-btn" onclick="goHome()">
+                    <span style="font-size: 24px; font-weight: bold; color: white;">STRIVO</span>
+                </button>
+            </div>
+            <div class="nav-center">
+                <a href="descuento.html" class="nav-link">Descuento</a>
+                <a href="hombres.html" class="nav-link">Hombre</a>
+                <a href="mujeres.html" class="nav-link">Mujer</a>
+                <a href="ninos.html" class="nav-link active">Niños</a>
+                <a href="marcas.html" class="nav-link">Marcas</a>
+            </div>
+            <div class="nav-right">
+                <a href="favoritos.html" class="nav-icon">❤️<span id="favoritesCount" class="count-badge"></span></a>
+                <a href="carrito.html" class="nav-icon">🛒<span id="cartCount" class="count-badge"></span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="category-main">
+        <div class="category-hero">
+            <h1>Colección Niños</h1>
+            <p>Desarrollando futuros campeones con equipamiento de calidad</p>
+        </div>
+
+        <div class="category-filters">
+            <div class="filters">
+                <select class="filter-select" onchange="filterProducts('niños', this.value)">
+                    <option value="">Todas las categorías</option>
+                    <option value="raquetas">Raquetas</option>
+                    <option value="calzado">Calzado</option>
+                    <option value="ropa">Ropa</option>
+                    <option value="accesorios">Accesorios</option>
+                </select>
+                
+                <select class="filter-select" onchange="filterProducts('niños', this.value)">
+                    <option value="">Todas las marcas</option>
+                    <option value="strivo">Strivo</option>
+                    <option value="nike">Nike</option>
+                    <option value="adidas">Adidas</option>
+                    <option value="head">Head</option>
+                </select>
+                
+                <select class="filter-select" onchange="filterProducts('niños', this.value)">
+                    <option value="">Precio</option>
+                    <option value="low">$0 - $30</option>
+                    <option value="medium">$30 - $80</option>
+                    <option value="high">$80+</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="products-container">
+            <h2>Productos para Niños</h2>
+            <div class="products-grid" id="categoryProducts">
+                <!-- Los productos se cargarán aquí -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#">Obtener ayuda</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Estado de pedido</a></li>
+                    <li><a href="#">Envío y entrega</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Opciones de pago</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Acerca de Strivo</h3>
+                <ul>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Inversionistas</a></li>
+                    <li><a href="#">Propósito</a></li>
+                    <li><a href="#">Sostenibilidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Promociones y descuentos</h3>
+                <ul>
+                    <li><a href="descuento.html">Descuentos</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#">📘</a>
+                    <a href="#">📷</a>
+                    <a href="#">🐦</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
